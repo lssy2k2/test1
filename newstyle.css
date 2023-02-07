@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sunflower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+html, body{
+    height:100%;
+}
+
+.container{
+    height : 100%;
+    display : flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* TODO:헤더 */
+header{ 
+    width : 20%;
+/*     background : lightblue; */
+    border-right-style: solid;
+    border-color :lightgray;
+    margin-right : 250px;
+}
+nav{
+    height : 100%;
+}
+.logo{
+    height : 10%;
+    font-family: 'Pacifico', cursive;
+    font-size :x-large;
+    display : flex;
+    align-items: center;
+/*     background: aliceblue; */
+}
+.logo h1{
+    margin-left:20px;
+}
+
+.left{
+    height : 90%;
+/*     background: lightgreen; */
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left img{
+    width : 25px;
+    height : 25px;
+    margin-right : 10px;
+}
+.left_1{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+}
+.left_1 div{
+    margin-left:15px;
+    margin-top:15px;
+    font-size:small;
+}
+
+.left_2{
+    margin-left:15px;
+    margin-bottom:15px;
+}
+
+.left_2 div{
+    margin-left:10px;
+}
+
+.left_2 div{
+    font-size:smaller;
+}
+
+
+/* TODO:메인영역 */
+main{
+    width : 500px;
+    height : 100%;
+/*     background : lightcyan; */
+}
+.contents{
+    margin-left : 10px;
+    margin-right : 100px;
+    height :100%;
+}
+/* TODO:인스타스토리 */
+.instastory{
+    height : 10%;
+/*     background: lightsalmon; */
+    border-style :solid;
+    border-radius: 10px;
+    border-color :lightgray;
+    margin :20px 0px 20px 0px;
+    display:flex;
+    flex-wrap : nowrap;
+    justify-content: center;
+}
+
+/* #story{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+ */
+.storybox{
+    margin-left:10px;
+    margin-right:10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.profilebox{
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    overflow : hidden; /*원 넘어가는 부분은 제거 FIXME:이미 오브젝트핏이 있어서 불필요*/
+    border-style : solid;
+    border-color : transparent;
+    background-image: linear-gradient(#fff, #fff), 
+    linear-gradient(to right, red 0%,  orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.profilebox img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;/* 사진이 박스에 맞게 들어가도록 */
+}
+#profilepic{
+    width:40px;
+    height:40px;
+}
+
+#instaId{
+    position:absolute;
+    font-size: small;
+}
+
+/* TODO:인스타포스트 */
+.instapost{
+    /*height : 90%;FIXME:인스타스토리에 마진을 줬더니 하이트가 무너짐*/
+/*     background: lightseagreen; */
+    display:flex;
+    flex-direction: column;
+
+}
+
+.onepost{
+    border-style: solid;
+    border-radius: 10px;
+    border-color :lightgray;
+    margin-bottom:10px; 
+}
+
+.profileid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.postboxLine{
+    display: flex;
+    padding-left:5px;
+    padding-top:5px;
+}
+
+img.post_more{
+    width : 20px;
+    height : 20px;
+    padding-top:5px;
+    padding-right:5px;
+}
+
+.profilebox_post{
+    width : 30px;
+    height : 30px;
+    border-radius: 50%;
+    border-style : solid;
+    border-width : 2px;
+    overflow :hidden;
+    display:flex;
+}
+.profilebox_post a{
+    position:absolute;
+    display:flex;
+    padding-left: 5px;
+}
+.profilebox_post div{
+    display: flex;
+    align-items: center;
+}
+
+
+.profilebox_post img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;/* 사진이 박스에 맞게 들어가도록 */
+}
+
+.posting{
+    object-fit :cover;
+/*     background: lightblue; */
+}
+
+#postingPicture{
+    width:100%;
+    height:100%;
+}
+
+.heartbookmark{
+    display:flex;
+    justify-content: space-between;
+    padding-left:5px;
+    padding-right:5px;
+}
+.heart img{
+    width : 20px;
+    height : 20px;
+}
+.bookmark img{
+    width : 20px;
+    height : 20px;
+}
+
+.like{
+    padding-left:5px;
+}
+
+.writing{
+    display: flex;
+    padding-left:5px;
+}
+
+.commentMore{
+    padding-left:5px;
+}
+
+.commentsee{
+    display: flex;
+    justify-content: space-between;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.commentsee img{
+    width: 20px;
+    height: 20px;
+}
+
+.postingDate{
+    padding-left:5px;
+}
+
+.comment img{
+    width: 20px;
+    height: 20px;
+}
+.comment{
+    display : flex;
+    flex-direction: row;
+    padding-left:5px;
+    padding-right:5px;
+}
+.comment input[type="text"]{
+    width:330px;
+    height:30px;
+    border: none;
+    padding-left:5px;
+}
+.comment input[type="button"]{
+    border: none;
+    background: lightgrey;
+}
+
+
+/* TODO:푸터 */
+footer{
+    width : 40%;
+/*     height : 100%; 불필요함*/
+/*     background : lightgoldenrodyellow; */
+}
+.right{
+    margin-right : 50%;
+    height : 100%;
+/*     height : calc(100% - 30px); */
+/*     background: lightskyblue; */
+}
+
+.trans{
+    height : 7%;
+/*     background: lightgreen; */
+    padding-top: 50px;
+}
+.recommand{
+/*     height : 40%; FIXME:하이트를 안주면 나머지는 recommand로 채우는 것 같음*/
+/*     background: lightslategray; */
+}
+.copyright{
+    height : 10%;
+/*     background: seagreen; */
+}
+
+.transbox{
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    overflow : hidden;/* 원 넘어가는 부분은 제거 */
+    border-style : solid;
+    display: flex;
+}
+
+.transid{
+    position: absolute;
+    margin-left :50px;
+    font-size: small;
+}
+
+.transbox img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;/* 사진이 박스에 맞게 들어가도록 */
+}
+
+.trans{
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+.trans_2{
+    display:flex;
+}
+
+.trans_3{
+    margin-top:10px;
+    font-size: small;
+}
+
+.recommand_2{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.recombox{
+    width : 25px;
+    height : 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    overflow : hidden;/* 원 넘어가는 부분은 제거 */
+    border-style : solid;
+}
+
+.recombox img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;/* 사진이 박스에 맞게 들어가도록 */
+}
+
+.recommand_25{
+    display:flex;
+    flex-direction: column;
+}
+
+.recommand_3{
+    display: flex;
+    justify-content: space-between;
+    font-size:small;
+}
+
+.recommand_4{
+    display: flex;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.recommand_4 p{
+    font-size:small;
+}
+
+.copyright{
+    font-size: small;
+}
