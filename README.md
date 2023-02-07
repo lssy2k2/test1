@@ -1,2 +1,1 @@
-hi today is holiday
-tomorrow is tomorrow
+"today is 2/7"
