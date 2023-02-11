@@ -4,5 +4,6 @@ i'm learning git now.
 ##double hashtag means subtitle
 1. 한글
 2. english
-3. 장바구니담기
+3. 한줄더 추가해요
+4. 장바구니담기
 ```writing three backtick can make write code```
